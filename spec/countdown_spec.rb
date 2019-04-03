@@ -9,7 +9,7 @@ describe 'LOOPS' do
 
     it "outputs '<n> SECOND(S)!' string to STDOUT for each count" do
 
-      expect(countdown(10)).to output(countdown_output).to_stdout
+      expect{countdown(10)}.to output(countdown_output).to_stdout
 
     end
 
