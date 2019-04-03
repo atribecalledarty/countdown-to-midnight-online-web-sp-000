@@ -10,6 +10,7 @@ describe 'LOOPS' do
     it "outputs '<n> SECOND(S)!' string to STDOUT for each count" do
       binding.pry
       expect { countdown(10) }.to output(countdown_output).to_stdout
+      binding.pry
     end
 
     it 'returns HAPPY NEW YEAR!' do
